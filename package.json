@@ -1,5 +1,8 @@
 {
   "name": "cart",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react-bootstrap": "^0.31.3"
+  }
 }

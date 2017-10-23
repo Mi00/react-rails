@@ -49,9 +49,9 @@ var Body = React.createClass({
 
 	render() {
 		return (
-			<div>
-				<NewItem handleSubmit={this.handleSubmit}/>
-				<AllItems items={this.state.items} handleDelete={this.handleDelete} onUpdate={this.handleUpdate} />
+			<div>				
+				<AllItems items={this.state.items} handleDelete={this.handleDelete} onUpdate={this.handleUpdate} className='row'/>
+				<NewItem handleSubmit={this.handleSubmit} className='row' />
 			</div>
 		)
 	}

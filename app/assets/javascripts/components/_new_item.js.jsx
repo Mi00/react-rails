@@ -14,10 +14,10 @@ var NewItem = React.createClass({
 
 	render() {
 		return (
-			<div>
-				<input type="text" ref={input => this.name = input } placeholder='Enter the name of the item' />
-				<input type="text" ref={input => this.description = input }  placeholder='Enter the description' />
-				<button onClick={this.handleClick}>Submit</button>
+			<div className='text-center form-group'>
+				<input type="text" ref={input => this.name = input } className='form-control' placeholder='Enter the name of the item' />
+				<input type="text" ref={input => this.description = input } className='form-control'  placeholder='Enter the description' />
+				<button onClick={this.handleClick} className='btn btn-primary'>Add new</button>
 			</div>
 		)
 	}

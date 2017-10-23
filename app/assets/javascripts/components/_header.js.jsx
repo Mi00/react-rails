@@ -1,8 +1,8 @@
 var Header = React.createClass({
 	render() {
 		return(
-			<div>
-				<h1>Hello, world!</h1>
+			<div className='text-center'>
+				<h1>React items</h1>
 			</div>
 		)
 	}
