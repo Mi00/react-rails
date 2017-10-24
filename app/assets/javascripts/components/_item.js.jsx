@@ -15,14 +15,14 @@ var Item = React.createClass({
 	},
 
 	render () {
-		var name = this.state.editable ? <input type='text' ref={input => this.name = input } defaultValue={this.props.item.name} /> : <h3>{this.props.item.name}</h3>;
-		var description = this.state.editable ? <input type='text' ref={input => this.description = input } defaultValue={this.props.item.description} /> : <p>{this.props.item.description}</p>;
+		var name = this.state.editable ? <input type='text' ref={input => this.name = input } className="form-control" defaultValue={this.props.item.name} /> : <h3>{this.props.item.name}</h3>;
+		var description = this.state.editable ? <textarea type='text' rows="6" ref={input => this.description = input } className="form-control" defaultValue={this.props.item.description} /> : <p>{this.props.item.description}</p>;
 		return (
 			<div>
 				{name}
 				{description}
 				<button onClick={this.handleEdit} className='btn btn-success'> {this.state.editable ? 'Submit' : 'Edit'}</button>
-				<button onClick={this.handleDelete} className='btn btn-warning'>Delete</button>
+				<button onClick={this.props.handleDelete} className='btn btn-warning'>Delete</button>
 			</div>
 			)
 	}
